@@ -15,7 +15,6 @@
 		7CD48EC0241F17C0009B1D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD48EBF241F17C0009B1D29 /* Assets.xcassets */; };
 		7CD48EC3241F17C0009B1D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD48EC1241F17C0009B1D29 /* LaunchScreen.storyboard */; };
 		7CD48ECC241F1AFE009B1D29 /* DrumButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD48ECB241F1AFE009B1D29 /* DrumButton.swift */; };
-		7CD48ECE241F30CB009B1D29 /* DrumDial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD48ECD241F30CB009B1D29 /* DrumDial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		7CD48EC2241F17C0009B1D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CD48EC4241F17C0009B1D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CD48ECB241F1AFE009B1D29 /* DrumButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumButton.swift; sourceTree = "<group>"; };
-		7CD48ECD241F30CB009B1D29 /* DrumDial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumDial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +64,6 @@
 				7CD48ECA241F1AC9009B1D29 /* supportingFiles */,
 				7CD48EBA241F17C0009B1D29 /* ViewController.swift */,
 				7CD48ECB241F1AFE009B1D29 /* DrumButton.swift */,
-				7CD48ECD241F30CB009B1D29 /* DrumDial.swift */,
 				7CD48EBC241F17C0009B1D29 /* Main.storyboard */,
 				7CD48EBF241F17C0009B1D29 /* Assets.xcassets */,
 				7CD48EC4241F17C0009B1D29 /* Info.plist */,
@@ -156,7 +153,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C5E8B8824208CA800F7E28F /* Knob.swift in Sources */,
-				7CD48ECE241F30CB009B1D29 /* DrumDial.swift in Sources */,
 				7CD48EBB241F17C0009B1D29 /* ViewController.swift in Sources */,
 				7CD48EB7241F17C0009B1D29 /* AppDelegate.swift in Sources */,
 				7CD48EB9241F17C0009B1D29 /* SceneDelegate.swift in Sources */,

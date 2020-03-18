@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = #colorLiteral(red: 0.8870931268, green: 0.8731685877, blue: 0.8544336557, alpha: 1)
         knob.lineWidth = 8
         knob.pointerLength = 16
         knob.setValue(0.2)
@@ -26,6 +27,7 @@ class ViewController: UIViewController {
 
         knob.knobColor = UIColor.darkGray
         knob.pointerColor = UIColor.orange
+        
         
         
     }

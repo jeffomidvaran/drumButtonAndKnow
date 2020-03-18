@@ -14,6 +14,16 @@ class DrumButton: UIView {
     private let lightOffColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     let buttonOn: Bool = true
     
+    override init(frame: CGRect){
+        super.init(frame: frame)
+        self.backgroundColor = UIColor.clear
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.backgroundColor = UIColor.clear
+    }
+    
     override func draw(_ rect: CGRect) {
         // CREATE BUTTON BACKGROUND
         let outerButton = UIBezierPath(
@@ -27,8 +37,7 @@ class DrumButton: UIView {
         // CREATE BUTTON LIGHT
         let innerButtonWidth = bounds.maxX * 0.4
         let innerButtonHeight = bounds.maxY * 0.1
-        print(innerButtonWidth, innerButtonHeight)
-        
+
         let innerButton = UIBezierPath(
             roundedRect: CGRect(x: (bounds.maxX / 2) - innerButtonWidth / 2,
                                 y: bounds.maxY * 0.2,

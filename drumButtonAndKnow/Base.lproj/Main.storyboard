@@ -23,6 +23,11 @@
                                     <action selector="handleValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="6dx-QP-Nnn"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LRw-EG-U4s" customClass="DrumButton" customModule="drumButtonAndKnow" customModuleProvider="target">
+                                <rect key="frame" x="143" y="172" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
