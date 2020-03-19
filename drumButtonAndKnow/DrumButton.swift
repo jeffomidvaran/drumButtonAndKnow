@@ -28,8 +28,7 @@ class DrumButton: UIButton {
     private func customInit() {
         self.backgroundColor = UIColor.clear
     }
-    
-    
+
     override func draw(_ rect: CGRect) {
         // CREATE BUTTON BACKGROUND
         let outerButton = UIBezierPath(
@@ -53,8 +52,6 @@ class DrumButton: UIButton {
         buttonOn ? lightOnColor.setFill() : lightOffColor.setFill()
         innerButton.fill()
     }
-    
-    
 
     private struct SizeRatio {
         static let cornerFontSizeToBoundsHeight: CGFloat = 0.085

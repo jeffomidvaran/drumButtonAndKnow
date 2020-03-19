@@ -20,7 +20,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="handleValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="6dx-QP-Nnn"/>
+                                    <action selector="knobMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="6dx-QP-Nnn"/>
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LRw-EG-U4s" customClass="DrumButton" customModule="drumButtonAndKnow" customModuleProvider="target">
@@ -28,11 +28,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <connections>
-                                    <action selector="drumButtonPressed" destination="BYZ-38-t0r" eventType="valueChanged" id="ygL-co-tj2"/>
+                                    <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="valueChanged" id="ygL-co-tj2"/>
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fw3-DZ-47q" customClass="DrumDisplay" customModule="drumButtonAndKnow" customModuleProvider="target">
-                                <rect key="frame" x="143" y="492" width="128" height="128"/>
+                                <rect key="frame" x="107" y="507" width="200" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>

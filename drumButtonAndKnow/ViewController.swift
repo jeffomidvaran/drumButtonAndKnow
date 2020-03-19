@@ -13,17 +13,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var button: DrumButton!
     @IBOutlet weak var display: DrumDisplay!
     
-    @IBAction func handleValueChanged(_ sender: Any) {
-         print(knob.value)
+    @IBAction func knobMoved(_ sender: Any) {
+        let myString = String(knob.value)
+        if myString.count > 5 {
+            let index = myString.index(myString.startIndex, offsetBy: 5)
+            let substring = myString[..<index]
+            display.setlabelText(message: String(substring))
+        } else {
+            display.setlabelText(message: String(knob.value))
+        }
     }
-    
 
-    @IBAction func drumButtonPressed() {
+    @IBAction func buttonPressed() {
         button.buttonOn = !button.buttonOn
-        print("button was pressed: \(button.buttonOn)")
+        display.setlabelText(message: "5678")
     }
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.8870931268, green: 0.8731685877, blue: 0.8544336557, alpha: 1)
@@ -33,14 +38,14 @@ class ViewController: UIViewController {
         knob.pointerLength = 16
         knob.setValue(0.2)
         knob.addTarget(self,
-                       action: #selector(ViewController.handleValueChanged(_:)),
+                       action: #selector(ViewController.knobMoved(_:)),
                        for: .valueChanged)
         knob.knobColor = UIColor.darkGray
         knob.pointerColor = UIColor.orange
         
         // SET UP BUTTON
         button.buttonOn = false
-        button.addTarget(self, action: #selector(ViewController.drumButtonPressed), for: .touchUpInside)
+        button.addTarget(self, action: #selector(ViewController.buttonPressed), for: .touchUpInside)
     }
 }
 
