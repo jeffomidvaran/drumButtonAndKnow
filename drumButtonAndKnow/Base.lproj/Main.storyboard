@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7WI-b3-VJZ" customClass="DrumKnob" customModule="drumButtonAndKnow" customModuleProvider="target">
-                                <rect key="frame" x="143" y="384" width="128" height="128"/>
+                                <rect key="frame" x="143" y="335" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -31,12 +31,18 @@
                                     <action selector="drumButtonPressed" destination="BYZ-38-t0r" eventType="valueChanged" id="ygL-co-tj2"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fw3-DZ-47q" customClass="DrumDisplay" customModule="drumButtonAndKnow" customModuleProvider="target">
+                                <rect key="frame" x="143" y="492" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.88709312679999996" green="0.87316858770000005" blue="0.85443365569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="button" destination="LRw-EG-U4s" id="B4x-Vl-aHX"/>
+                        <outlet property="display" destination="fw3-DZ-47q" id="rqH-Ku-ahU"/>
                         <outlet property="knob" destination="7WI-b3-VJZ" id="T3S-25-7VL"/>
                     </connections>
                 </viewController>

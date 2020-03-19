@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var knob: DrumKnob!
     @IBOutlet weak var button: DrumButton!
+    @IBOutlet weak var display: DrumDisplay!
     
     @IBAction func handleValueChanged(_ sender: Any) {
          print(knob.value)
@@ -19,7 +20,7 @@ class ViewController: UIViewController {
 
     @IBAction func drumButtonPressed() {
         button.buttonOn = !button.buttonOn
-        print("button was pressed \(button.buttonOn)")
+        print("button was pressed: \(button.buttonOn)")
     }
     
     
