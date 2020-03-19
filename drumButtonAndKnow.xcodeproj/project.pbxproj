@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C5E8B8824208CA800F7E28F /* Knob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E8B8724208CA800F7E28F /* Knob.swift */; };
+		7C5E8B8824208CA800F7E28F /* DrumKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E8B8724208CA800F7E28F /* DrumKnob.swift */; };
 		7CD48EB7241F17C0009B1D29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD48EB6241F17C0009B1D29 /* AppDelegate.swift */; };
 		7CD48EB9241F17C0009B1D29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD48EB8241F17C0009B1D29 /* SceneDelegate.swift */; };
 		7CD48EBB241F17C0009B1D29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD48EBA241F17C0009B1D29 /* ViewController.swift */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7C5E8B8724208CA800F7E28F /* Knob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = "<group>"; };
+		7C5E8B8724208CA800F7E28F /* DrumKnob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumKnob.swift; sourceTree = "<group>"; };
 		7CD48EB3241F17C0009B1D29 /* drumButtonAndKnow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drumButtonAndKnow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD48EB6241F17C0009B1D29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CD48EB8241F17C0009B1D29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,10 +60,10 @@
 		7CD48EB5241F17C0009B1D29 /* drumButtonAndKnow */ = {
 			isa = PBXGroup;
 			children = (
-				7C5E8B8724208CA800F7E28F /* Knob.swift */,
 				7CD48ECA241F1AC9009B1D29 /* supportingFiles */,
 				7CD48EBA241F17C0009B1D29 /* ViewController.swift */,
 				7CD48ECB241F1AFE009B1D29 /* DrumButton.swift */,
+				7C5E8B8724208CA800F7E28F /* DrumKnob.swift */,
 				7CD48EBC241F17C0009B1D29 /* Main.storyboard */,
 				7CD48EBF241F17C0009B1D29 /* Assets.xcassets */,
 				7CD48EC4241F17C0009B1D29 /* Info.plist */,
@@ -152,7 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C5E8B8824208CA800F7E28F /* Knob.swift in Sources */,
+				7C5E8B8824208CA800F7E28F /* DrumKnob.swift in Sources */,
 				7CD48EBB241F17C0009B1D29 /* ViewController.swift in Sources */,
 				7CD48EB7241F17C0009B1D29 /* AppDelegate.swift in Sources */,
 				7CD48EB9241F17C0009B1D29 /* SceneDelegate.swift in Sources */,

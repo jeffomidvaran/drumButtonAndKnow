@@ -8,21 +8,27 @@
 
 import UIKit
 
-class DrumButton: UIView {
-    private let buttonColor = #colorLiteral(red: 0.7603728175, green: 0.7242770791, blue: 0.6018891931, alpha: 1)
-    private let lightOnColor = UIColor.red
+@IBDesignable
+class DrumButton: UIButton {
+    var buttonColor = #colorLiteral(red: 0.7603728175, green: 0.7242770791, blue: 0.6018891931, alpha: 1) {didSet{ setNeedsLayout(); setNeedsDisplay()}}
+    var lightOnColor = UIColor.red { didSet {setNeedsLayout(); setNeedsDisplay()}}
+    var buttonOn: Bool = true {didSet{setNeedsLayout(); setNeedsDisplay()}}
     private let lightOffColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-    let buttonOn: Bool = true
     
     override init(frame: CGRect){
         super.init(frame: frame)
-        self.backgroundColor = UIColor.clear
+        customInit()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        customInit()
+    }
+    
+    private func customInit() {
         self.backgroundColor = UIColor.clear
     }
+    
     
     override func draw(_ rect: CGRect) {
         // CREATE BUTTON BACKGROUND
@@ -48,6 +54,8 @@ class DrumButton: UIView {
         innerButton.fill()
     }
     
+    
+
     private struct SizeRatio {
         static let cornerFontSizeToBoundsHeight: CGFloat = 0.085
         static let cornerRadiusToBoundsHeight: CGFloat = 0.06

@@ -9,7 +9,8 @@
 import UIKit
 import UIKit.UIGestureRecognizerSubclass
 
-class Knob: UIControl {
+@IBDesignable
+class DrumKnob: UIButton {
     let knobLayer = CAShapeLayer()
     let pointerLayer = CAShapeLayer()
     var pointerColor = UIColor.orange { didSet { pointerLayer.strokeColor = pointerColor.cgColor }}
@@ -42,7 +43,7 @@ class Knob: UIControl {
         layer.addSublayer(knobLayer)
         layer.addSublayer(pointerLayer)
         
-        let gestureRecognizer = RotationGestureRecognizer(target: self, action: #selector(Knob.handleGesture(_:)))
+        let gestureRecognizer = RotationGestureRecognizer(target: self, action: #selector(DrumKnob.handleGesture(_:)))
         addGestureRecognizer(gestureRecognizer)
     }
 
