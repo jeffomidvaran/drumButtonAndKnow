@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7C052F8724231D4400D3FAAB /* DrumDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C052F8624231D4400D3FAAB /* DrumDisplay.swift */; };
 		7C052F8924241A7900D3FAAB /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C052F8824241A7900D3FAAB /* digital-7.ttf */; };
+		7C3B54B9242847F600D8711E /* SignalGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3B54B8242847F600D8711E /* SignalGenerator.swift */; };
 		7C5E8B8824208CA800F7E28F /* DrumKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E8B8724208CA800F7E28F /* DrumKnob.swift */; };
 		7CD48EB7241F17C0009B1D29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD48EB6241F17C0009B1D29 /* AppDelegate.swift */; };
 		7CD48EB9241F17C0009B1D29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD48EB8241F17C0009B1D29 /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		7C052F8624231D4400D3FAAB /* DrumDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumDisplay.swift; sourceTree = "<group>"; };
 		7C052F8824241A7900D3FAAB /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
+		7C3B54B8242847F600D8711E /* SignalGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalGenerator.swift; sourceTree = "<group>"; };
 		7C5E8B8724208CA800F7E28F /* DrumKnob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumKnob.swift; sourceTree = "<group>"; };
 		7CD48EB3241F17C0009B1D29 /* drumButtonAndKnow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drumButtonAndKnow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD48EB6241F17C0009B1D29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				7CD48ECA241F1AC9009B1D29 /* supportingFiles */,
 				7C052F8124231BE200D3FAAB /* Fonts */,
 				7CD48EC4241F17C0009B1D29 /* Info.plist */,
+				7C3B54B8242847F600D8711E /* SignalGenerator.swift */,
 			);
 			path = drumButtonAndKnow;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C3B54B9242847F600D8711E /* SignalGenerator.swift in Sources */,
 				7C5E8B8824208CA800F7E28F /* DrumKnob.swift in Sources */,
 				7CD48EBB241F17C0009B1D29 /* ViewController.swift in Sources */,
 				7CD48EB7241F17C0009B1D29 /* AppDelegate.swift in Sources */,

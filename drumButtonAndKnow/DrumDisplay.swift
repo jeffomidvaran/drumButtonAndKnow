@@ -57,7 +57,6 @@ class DrumDisplay: UIView {
         label.sizeToFit()
         label.center.x = self.bounds.midX
         label.center.y = self.bounds.midY
-        
     }
 
     private struct SizeRatio {
